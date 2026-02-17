@@ -22,6 +22,28 @@
             position: relative;
             z-index: 1;
         }
+
+        @media (max-width: 768px) {
+            .step-number {
+                font-size: 5rem;
+                top: -30px;
+                left: -10px;
+            }
+
+            .process .grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+                margin-bottom: 60px !important;
+            }
+
+            .step-card {
+                text-align: center;
+            }
+
+            .cta-vision .card {
+                padding: 3rem 1.5rem !important;
+            }
+        }
     </style>
 </head>
 
@@ -45,7 +67,7 @@
             <div class="container" style="max-width: 1000px;">
                 <!-- Step 1 -->
                 <div class="grid"
-                    style="grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center; margin-bottom: 100px;">
+                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 5rem; align-items: center; margin-bottom: 100px;">
                     <div style="position: relative;">
                         <span class="step-number" style="color: rgba(124, 58, 237, 0.1);">01</span>
                         <div class="step-card">
@@ -67,7 +89,7 @@
 
                 <!-- Step 2 -->
                 <div class="grid"
-                    style="grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; margin-bottom: 100px;">
+                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 5rem; align-items: center; margin-bottom: 100px;">
                     <div class="card glass-morphism"
                         style="height: 300px; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: white;">
                         🧩</div>
@@ -88,7 +110,8 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="grid" style="grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center;">
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 5rem; align-items: center;">
                     <div style="position: relative;">
                         <span class="step-number">03</span>
                         <div class="step-card">

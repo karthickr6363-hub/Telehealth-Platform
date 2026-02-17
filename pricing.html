@@ -26,8 +26,8 @@
 
         <section class="pricing section" style="padding-top: 0;">
             <div class="container">
-                <div class="grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: stretch;">
+                <div class="grid pricing-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 3rem; align-items: stretch;">
 
                     <!-- Essential Plan -->
                     <div class="card glass-morphism" style="display: flex; flex-direction: column;">
@@ -140,6 +140,19 @@
             </div>
         </section>
     </main>
+
+    <style>
+        @media (max-width: 768px) {
+            .pricing-grid .card {
+                transform: none !important;
+                margin: 0 !important;
+            }
+
+            .page-header {
+                padding-top: 140px !important;
+            }
+        }
+    </style>
     <div id="footer-placeholder"></div>
     <script src="js/components.js"></script>
 </body>

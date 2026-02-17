@@ -27,8 +27,8 @@
         <section class="section">
             <div class="container">
                 <!-- Featured Article -->
-                <div class="card glass-morphism"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 0; overflow: hidden; margin-bottom: 5rem; border: none; background: var(--bg-dark); color: white;">
+                <div class="card glass-morphism resource-featured"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 0; padding: 0; overflow: hidden; margin-bottom: 5rem; border: none; background: var(--bg-dark); color: white;">
                     <div
                         style="background: #cbd5e1; height: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
                         🥗</div>
@@ -45,7 +45,8 @@
                 </div>
 
                 <!-- Resources Grid -->
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2.5rem;">
 
                     <div class="card glass-morphism">
                         <div

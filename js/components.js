@@ -46,7 +46,10 @@ const components = {
                     <li><a href="specialties.html">Specialties</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="patient-portal.html">Dashboard</a></li>
-                    <li style="margin-top: 1rem;"><a href="booking.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a></li>
+                    <li><a href="providers.html">Providers</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li style="margin-top: 1rem;"><a href="login.html" class="btn btn-outline" style="width: 100%; margin-bottom: 1rem;">Sign In</a></li>
+                    <li><a href="booking.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a></li>
                 </ul>
             </div>
         </div>
@@ -110,6 +113,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (headerPlaceholder) headerPlaceholder.innerHTML = components.header;
     if (footerPlaceholder) footerPlaceholder.innerHTML = components.footer;
+
+    // Add Scroll-to-Top Button
+    const scrollTopBtn = document.createElement('button');
+    scrollTopBtn.id = 'scroll-top';
+    scrollTopBtn.className = 'scroll-top';
+    scrollTopBtn.innerHTML = '↑';
+    scrollTopBtn.title = 'Back to Top';
+    document.body.appendChild(scrollTopBtn);
+
+    // Scroll Logic
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('active');
+        } else {
+            scrollTopBtn.classList.remove('active');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 
     // Mobile Menu Logic
     const navToggle = document.getElementById('nav-toggle');
