@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Dashboard | TeleHealth Pro</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .dashboard-grid {
+            margin-top: -90px;
             display: grid;
             grid-template-columns: 280px 1fr;
-            min-height: calc(100vh - var(--navbar-height));
-            margin-top: var(--navbar-height);
+            min-height: 100vh;
+            padding-top: calc(var(--navbar-height) + 1rem);
+            /* Added buffer to prevent overlap */
         }
 
         .sidebar {
+            margin-top: -90px;
             background: white;
             border-right: 1px solid var(--border-color);
-            padding: 2.5rem 1.5rem;
+            padding: 0 1rem 1rem 1rem;
             position: sticky;
             top: var(--navbar-height);
             height: calc(100vh - var(--navbar-height));
@@ -75,6 +79,7 @@
             }
 
             .sidebar {
+
                 position: relative;
                 top: 0;
                 height: auto;
@@ -132,12 +137,24 @@
 
 <body style="background: white;">
 
-    <div id="header-placeholder"></div>
 
     <div class="dashboard-grid">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="flex align-center gap-1" style="margin-bottom: 3rem; padding-left: 0.5rem;">
+            <!-- Brand Header -->
+            <div class="flex align-center gap-1" style="margin-bottom: 2rem;">
+                <div class="logo-container"
+                    style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-main); text-decoration: none;">
+                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#2563EB" />
+                        <path d="M20 10V30M10 20H30" stroke="white" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                    <span class="logo-brand"
+                        style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">TeleHealth</span>
+                </div>
+            </div>
+
+            <div class="flex align-center gap-1" style="margin-bottom: 2rem; padding-left: 0.5rem;">
                 <div
                     style="width: 48px; height: 48px; border-radius: 12px; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">
                     A</div>

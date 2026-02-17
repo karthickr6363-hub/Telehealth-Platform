@@ -1,7 +1,7 @@
 const components = {
     header: `
         <nav class="navbar">
-            <div class="container flex justify-between align-center">
+            <div class="container flex flex-nowrap justify-between align-center">
                 <a href="index.html" class="logo-container">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="8" fill="#2563EB"/>
@@ -67,10 +67,18 @@ const components = {
                     </div>
                     <p style="color: var(--text-muted); margin-bottom: 1.5rem;">HIPAA-compliant virtual healthcare platform providing accessible medical consultations anytime, anywhere.</p>
                     <div class="social-links flex gap-1">
-                        <a href="#" class="social-icon">FB</a>
-                        <a href="#" class="social-icon">TW</a>
-                        <a href="#" class="social-icon">LI</a>
-                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon" aria-label="Facebook" style="color: var(--text-muted); transition: color 0.3s; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter" style="color: var(--text-muted); transition: color 0.3s; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn" style="color: var(--text-muted); transition: color 0.3s; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram" style="color: var(--text-muted); transition: color 0.3s; display: flex; align-items: center; justify-content: center;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
                     </div>
                 </div>
                 <div>
@@ -97,6 +105,20 @@ const components = {
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="hipaa.html">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                            <span>📧</span> <a href="mailto:support@telehealth.com">support@telehealth.com</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                            <span>📞</span> <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem; color: var(--text-muted);">
+                            <span>📍</span> <span>123 Health St, Medical City, CA</span>
+                        </li>
                     </ul>
                 </div>
             </div>
