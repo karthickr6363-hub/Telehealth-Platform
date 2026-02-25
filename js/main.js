@@ -64,14 +64,15 @@ function countUp() {
     counters.forEach(counter => {
         const updateCount = () => {
             const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
+            const count = parseInt(counter.innerText.replace('+', '')) || 0;
             const inc = target / speed;
 
             if (count < target) {
-                counter.innerText = Math.ceil(count + inc);
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount + '+';
                 setTimeout(updateCount, 1);
             } else {
-                counter.innerText = target;
+                counter.innerText = target + '+';
             }
         };
         updateCount();
