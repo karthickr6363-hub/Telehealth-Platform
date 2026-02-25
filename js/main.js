@@ -117,6 +117,24 @@ function updateToggleIcons(theme) {
     });
 }
 
+// Mobile Menu Toggle
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (mobileMenuToggle && navMenu) {
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        const icon = mobileMenuToggle.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+}
+
 // Dashboard Sidebar Toggle for Mobile
 const sidebarToggle = document.querySelector('.sidebar-toggle');
 const sidebar = document.querySelector('.sidebar');
@@ -124,8 +142,14 @@ const sidebar = document.querySelector('.sidebar');
 if (sidebarToggle && sidebar) {
     sidebarToggle.addEventListener('click', () => {
         sidebar.classList.toggle('active');
-        sidebarToggle.classList.toggle('fa-indent');
-        sidebarToggle.classList.toggle('fa-outdent');
+        const isActive = sidebar.classList.contains('active');
+        if (isActive) {
+            sidebarToggle.classList.remove('fa-bars');
+            sidebarToggle.classList.add('fa-times');
+        } else {
+            sidebarToggle.classList.remove('fa-times');
+            sidebarToggle.classList.add('fa-bars');
+        }
     });
 }
 
