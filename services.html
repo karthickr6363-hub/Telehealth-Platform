@@ -4,151 +4,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Care Capabilities | TeleHealth Pro</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Services | TeleHealth Platform</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/913/913076.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <div id="header-placeholder"></div>
-
-    <main>
-        <!-- Luxury Page Header -->
-        <section class="page-header section"
-            style="background: var(--bg-dark); color: white; padding-top: 180px; text-align: center; position: relative; overflow: hidden;">
-            <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 70% 30%, rgba(37, 99, 235, 0.2), transparent); pointer-events: none;">
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i> TeleHealth
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home1</a></li>
+                <li><a href="home-2.html" class="nav-link">Home2</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="patient-dashboard.html" class="dropdown-item">Patient</a>
+                        <a href="doctor-dashboard.html" class="dropdown-item">Doctor</a>
+                    </div>
+                </li>
+                <li class="mobile-nav-btns">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+            <div class="nav-btns">
+                <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <i class="fas fa-bars mobile-toggle"></i>
             </div>
-            <div class="container" style="position: relative; z-index: 1;">
-                <span
-                    style="color: var(--primary); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase;">Medical
-                    Excellence</span>
-                <h1 style="color: white; margin-top: 1rem; margin-bottom: 1.5rem;">The Future of <span
-                        class="gradient-text">Virtual Care</span></h1>
-                <p style="color: #cbd5e1; max-width: 800px; margin: 0 auto; font-size: 1.25rem; line-height: 1.6;">Our
-                    multi-disciplinary team provides comprehensive medical solutions tailored to your unique biology and
-                    lifestyle.</p>
+        </div>
+    </header>
+
+    <section class="section-padding bg-section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="text-center mb-5 reveal fade-bottom">
+                <h1 style="font-size: 3rem; margin-bottom: 20px;">Our Comprehensive Services</h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto;">We offer a wide range of
+                    healthcare services tailored to meet your needs from the comfort of your home.</p>
             </div>
-        </section>
-
-        <!-- Services Grid -->
-        <section class="services-grid section" style="background: white;">
-            <div class="container">
-                <div class="grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 3rem;">
-
-                    <!-- Advanced Primary Care -->
-                    <div class="card service-card-center"
-                        style="display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 16px; background: rgba(37, 99, 235, 0.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 2rem;">
-                            🩺</div>
-                        <h3 style="margin-bottom: 1rem;">Advanced Primary Care</h3>
-                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem; flex: 1;">From acute
-                            illnesses like flu and infections to ongoing preventative health management, our primary
-                            care physicians act as your local health leads in a digital-first environment.</p>
-                        <div
-                            style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">24/7
-                                Availability</span>
-                            <a href="booking.html" class="btn btn-outline"
-                                style="height: 40px; padding: 0 1.5rem; font-size: 0.9rem;">Book Now</a>
-                        </div>
+            <div class="services-grid">
+                <!-- 1. Teleconsultation -->
+                <div class="service-card reveal pop-up">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600"
+                            alt="Teleconsultation">
                     </div>
-
-                    <!-- Specialized Mental Wellness -->
-                    <div class="card service-card-center"
-                        style="display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 16px; background: rgba(124, 58, 237, 0.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 2rem;">
-                            🧠</div>
-                        <h3 style="margin-bottom: 1rem;">Precision Psychiatry</h3>
-                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem; flex: 1;">Integrated
-                            mental health solutions including psychiatric evaluations, medication management, and
-                            specialized therapy for complex neuro-divergent needs.</p>
-                        <div
-                            style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">Licensed
-                                Therapists</span>
-                            <a href="booking.html" class="btn btn-outline"
-                                style="height: 40px; padding: 0 1.5rem; font-size: 0.9rem;">Consult</a>
-                        </div>
+                    <h3>Teleconsultation</h3>
+                    <p>High-quality video calls with specialized doctors anytime, anywhere for immediate care.</p>
+                </div>
+                <!-- 2. E-Prescription -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.1s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/8376176/pexels-photo-8376176.jpeg"
+                            alt="E-Prescription">
                     </div>
-
-                    <!-- Remote RPM -->
-                    <div class="card service-card-center"
-                        style="display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 16px; background: rgba(16, 185, 129, 0.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 2rem;">
-                            ⌚</div>
-                        <h3 style="margin-bottom: 1rem;">Remote Bio-Monitoring</h3>
-                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem; flex: 1;">Harnessing
-                            IoT and wearable technology to monitor chronic conditions like hypertension and diabetes in
-                            real-time, preventing complications before they happen.</p>
-                        <div
-                            style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">Active
-                                Tech-Sync</span>
-                            <a href="booking.html" class="btn btn-outline"
-                                style="height: 40px; padding: 0 1.5rem; font-size: 0.9rem;">Enable</a>
-                        </div>
+                    <h3>E-Prescription</h3>
+                    <p>Get digital prescriptions that are accepted at pharmacies nationwide instantly.</p>
+                </div>
+                <!-- 3. Medical Records -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.2s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/4989132/pexels-photo-4989132.jpeg"
+                            alt="Medical Records">
                     </div>
-
-                    <!-- Personalized Lab Insights -->
-                    <div class="card service-card-center"
-                        style="display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%;">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 16px; background: rgba(245, 158, 11, 0.1); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 2rem;">
-                            🔬</div>
-                        <h3 style="margin-bottom: 1rem;">Genomic & Lab Analysis</h3>
-                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 2rem; flex: 1;">Advanced
-                            laboratory testing with physician-reviewed insights. We decode your biomarkers and provide
-                            actionable wellness roadmaps.</p>
-                        <div
-                            style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                            <span style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">Home-Kit
-                                Available</span>
-                            <a href="booking.html" class="btn btn-outline"
-                                style="height: 40px; padding: 0 1.5rem; font-size: 0.9rem;">Order Kit</a>
-                        </div>
+                    <h3>Medical Records</h3>
+                    <p>Secure digital storage for all your medical history and test results with easy access.</p>
+                </div>
+                <!-- 4. Pharmacy Delivery -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.3s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/7363098/pexels-photo-7363098.jpeg"
+                            alt="Pharmacy Delivery">
                     </div>
+                    <h3>Pharmacy Delivery</h3>
+                    <p>Order medicines online and get them delivered to your doorstep in 24 hours.</p>
+                </div>
+                <!-- 5. Home Checkups -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.4s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/7653113/pexels-photo-7653113.jpeg"
+                            alt="Home Checkups">
+                    </div>
+                    <h3>Home Checkups</h3>
+                    <p>Book a physical visit from a nurse or doctor for professional home healthcare.</p>
+                </div>
+                <!-- 6. Lab Tests -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.5s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg" alt="Lab Tests">
+                    </div>
+                    <h3>Lab Tests</h3>
+                    <p>Schedule lab tests at home. We collect samples and provide precise digital reports.</p>
+                </div>
+                <!-- 7. Mental Health -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.6s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/8560049/pexels-photo-8560049.jpeg"
+                            alt="Mental Health">
+                    </div>
+                    <h3>Mental Health</h3>
+                    <p>Confidential online counseling and therapy sessions with certified mental health experts.</p>
+                </div>
+                <!-- 8. Pediatric Care -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.7s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/5998449/pexels-photo-5998449.jpeg"
+                            alt="Pediatric Care">
+                    </div>
+                    <h3>Pediatric Care</h3>
+                    <p>Specialized healthcare and consultation for infants, children, and adolescents.</p>
+                </div>
+                <!-- 9. Dermatology -->
+                <div class="service-card reveal pop-up" style="transition-delay: 0.8s;">
+                    <div class="service-img">
+                        <img src="https://images.pexels.com/photos/4586713/pexels-photo-4586713.jpeg" alt="Dermatology">
+                    </div>
+                    <h3>Dermatology</h3>
+                    <p>Expert diagnosis and treatment for all your skin, hair, and nail-related conditions.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Detailed Care Process -->
-        <section class="care-process section" style="background: var(--bg-light);">
-            <div class="container">
-                <div style="text-align: center; margin-bottom: 5rem;">
-                    <h2>Our Scientific Approach</h2>
-                    <p style="color: var(--text-muted); max-width: 700px; margin: 1rem auto;">We leverage the latest
-                        medical research to deliver care that is both high-tech and high-touch.</p>
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div
+                    style="margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px;">
+                    <h4 style="margin-bottom: 10px;">How do I book an appointment?</h4>
+                    <p style="color: var(--text-muted);">Simply sign up, choose a doctor, and select a time slot that
+                        works for you.</p>
                 </div>
-                <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 4rem;">
-                    <div style="text-align: center;">
-                        <h4 style="margin-bottom: 1rem;">1. Bio-Data Intake</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Integration of medical history,
-                            wearable data, and current symptoms.</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <h4 style="margin-bottom: 1rem;">2. Expert Triage</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">System-matching with the most qualified
-                            specialist for your specific profile.</p>
-                    </div>
-                    <div style="text-align: center;">
-                        <h4 style="margin-bottom: 1rem;">3. Precision Care</h4>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Outcome-focused treatment plans with
-                            continuous remote follow-up.</p>
-                    </div>
+                <div
+                    style="margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px;">
+                    <h4 style="margin-bottom: 10px;">Is my data secure?</h4>
+                    <p style="color: var(--text-muted);">Yes, we use military-grade encryption to protect all your
+                        personal and medical information.</p>
+                </div>
+                <div
+                    style="margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px;">
+                    <h4 style="margin-bottom: 10px;">Are consultants available on weekends?</h4>
+                    <p style="color: var(--text-muted);">Yes, our platform host doctors who are available 24/7,
+                        including weekends and public holidays.</p>
+                </div>
+                <div
+                    style="margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px;">
+                    <h4 style="margin-bottom: 10px;">Do I get a prescription after the visit?</h4>
+                    <p style="color: var(--text-muted);">Yes, if the doctor deems it necessary, you will receive a
+                        digital e-prescription that can be used at any local pharmacy.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                        <i class="fas fa-heartbeat"></i> TeleHealth
+                    </a>
+                    <p>TeleHealth provides progressive, and affordable healthcare, accessible on mobile and online for
+                        everyone.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Team</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="doctors.html">Search Doctor</a></li>
+                        <li><a href="services.html">Online Pharmacy</a></li>
+                        <li><a href="services.html">Consultation</a></li>
+                        <li><a href="services.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="index.html">Privacy Policy</a></li>
+                        <li><a href="index.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TeleHealth Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="js/components.js"></script>
+    <!-- Back to Top -->
+    <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

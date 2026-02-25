@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard | TeleHealth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/913/913076.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html" class="sidebar-logo">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i> TeleHealth
+                </div>
+            </a>
+            <nav>
+                <a href="#" class="sidebar-link active"><i class="fas fa-th-large"></i> Dashboard</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-calendar-check"></i> Appointments</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-file-medical"></i> Prescriptions</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-comment-dots"></i> Messages</a>
+                <a href="#" class="sidebar-link"><i class="fas fa-user-circle"></i> Profile</a>
+                <a href="login.html" class="sidebar-link" style="margin-top: 50px; color: #ef4444;"><i
+                        class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dash-header">
+                <div class="dash-welcome">Welcome back, <span>Jane!</span></div>
+                <div class="dash-header-right">
+                    <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+                    <div class="user-profile" style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                        <span style="font-weight: 500;">Jane Doe</span>
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100"
+                            alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview Cards -->
+            <div class="dashboard-cards">
+                <div class="dash-card">
+                    <div class="dash-card-info">
+                        <h3>Upcoming</h3>
+                        <p>2</p>
+                    </div>
+                    <div class="dash-card-icon"><i class="fas fa-calendar-day"></i></div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-info">
+                        <h3>Prescriptions</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="dash-card-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--secondary);"><i
+                            class="fas fa-pills"></i></div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-card-info">
+                        <h3>New Messages</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="dash-card-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent);"><i
+                            class="fas fa-envelope"></i></div>
+                </div>
+            </div>
+
+            <!-- Appointments Table -->
+            <div class="content-table reveal fade-bottom">
+                <div class="table-header">
+                    <h3>Recent Appointments</h3>
+                    <a href="#" style="color: var(--primary); font-size: 14px; font-weight: 500;">View All</a>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Specialization</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="display: flex; align-items: center; gap: 10px;">
+                                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=50"
+                                        alt="Doctor" style="border-radius: 50%;">
+                                    Dr. John Smith
+                                </td>
+                                <td>Cardiologist</td>
+                                <td>Oct 20, 2026</td>
+                                <td>10:00 AM</td>
+                                <td><span class="status-badge status-scheduled">Scheduled</span></td>
+                                <td><a href="#" style="color: var(--primary);"><i class="fas fa-video"></i> Join</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="display: flex; align-items: center; gap: 10px;">
+                                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=50"
+                                        alt="Doctor" style="border-radius: 50%;">
+                                    Dr. Sarah Wilson
+                                </td>
+                                <td>Pediatrician</td>
+                                <td>Oct 15, 2026</td>
+                                <td>02:30 PM</td>
+                                <td><span class="status-badge status-completed">Completed</span></td>
+                                <td><a href="#" style="color: var(--text-muted);"><i
+                                            class="fas fa-file-medical-alt"></i> Report</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer style="padding: 20px 0;">
+        <div class="container text-center">
+            <p style="font-size: 14px; color: #64748b;">&copy; 2026 TeleHealth Patient Portal. Confidential.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

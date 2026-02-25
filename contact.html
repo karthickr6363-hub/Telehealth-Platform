@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TeleHealth Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/913/913076.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i> TeleHealth
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home1</a></li>
+                <li><a href="home-2.html" class="nav-link">Home2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="patient-dashboard.html" class="dropdown-item">Patient</a>
+                        <a href="doctor-dashboard.html" class="dropdown-item">Doctor</a>
+                    </div>
+                </li>
+                <li class="mobile-nav-btns">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+            <div class="nav-btns">
+                <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <i class="fas fa-bars mobile-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero reveal fade-bottom">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 10px;">Get In Touch</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">We're here to help you with any questions or
+                concerns you may have.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="reveal fade-left">
+                    <h2 style="margin-bottom: 30px;">Contact Information</h2>
+                    <div class="contact-info-list" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="contact-info-item">
+                            <div class="dash-card-icon" style="flex-shrink: 0;"><i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Our Location</h4>
+                                <p style="color: var(--text-muted);">123 Healthcare Ave, Medical District, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="dash-card-icon" style="flex-shrink: 0;"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Phone Number</h4>
+                                <p style="color: var(--text-muted);">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="dash-card-icon" style="flex-shrink: 0;"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Email Address</h4>
+                                <p style="color: var(--text-muted);">support@telehealth.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h3 style="margin-bottom: 20px;">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-card reveal fade-right">
+                    <h2 style="margin-bottom: 30px;">Send Us a Message</h2>
+                    <form>
+                        <div style="display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+                            <div class="form-group" style="flex: 1; min-width: 200px;">
+                                <label for="name">First Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="John" required>
+                            </div>
+                            <div class="form-group" style="flex: 1; min-width: 200px;">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" class="form-input" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="How can we help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-input" placeholder="Write your message here..."
+                                style="min-height: 150px; resize: vertical;" required></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-padding bg-section">
+        <div class="container map-section reveal fade-bottom">
+            <h2 class="text-center mb-5">Find Us on Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528082187!2d-74.11976373946229!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                        <i class="fas fa-heartbeat"></i> TeleHealth
+                    </a>
+                    <p>TeleHealth provides progressive, and affordable healthcare, accessible on mobile and online for
+                        everyone.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Team</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="doctors.html">Search Doctor</a></li>
+                        <li><a href="services.html">Online Pharmacy</a></li>
+                        <li><a href="services.html">Consultation</a></li>
+                        <li><a href="services.html">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="index.html">Privacy Policy</a></li>
+                        <li><a href="index.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TeleHealth Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
