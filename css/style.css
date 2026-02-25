@@ -263,13 +263,6 @@ header {
     color: var(--primary);
 }
 
-.mobile-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--text-main);
-    transition: var(--transition);
-}
 
 .mobile-nav-btns {
     display: none;
@@ -1317,32 +1310,11 @@ footer {
         flex-shrink: 0;
     }
 
-    .nav-menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: var(--header-height);
-        left: 0;
-        width: 100%;
-        background: var(--card-bg);
-        padding: 20px;
-        box-shadow: var(--shadow-md);
-        z-index: 1001;
-    }
-
-    .mobile-toggle {
-        display: block;
-    }
 
     .nav-btns .btn {
         display: none;
     }
 
-    .nav-menu.active {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
 
     .mobile-nav-btns {
         display: flex;
@@ -1551,6 +1523,10 @@ footer {
         display: none;
         /* Hide name on very small screens or make it smaller */
     }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 576px) {
@@ -1577,5 +1553,9 @@ footer {
 
     .contact-hero p {
         font-size: 1rem !important;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }

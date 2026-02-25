@@ -1,15 +1,3 @@
-// Mobile Menu Toggle
-const mobileToggle = document.querySelector('.mobile-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-if (mobileToggle) {
-    mobileToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileToggle.classList.toggle('fa-bars');
-        mobileToggle.classList.toggle('fa-times');
-    });
-}
-
 // Sticky Header
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
