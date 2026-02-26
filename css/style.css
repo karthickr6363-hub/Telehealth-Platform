@@ -98,6 +98,19 @@ button {
     transition: var(--transition);
 }
 
+.btn-link {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -1090,6 +1103,37 @@ header {
     gap: 20px;
 }
 
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.user-profile span {
+    font-weight: 500;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mobile-logo {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary);
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-logo i {
+    font-size: 24px;
+}
+
 .sidebar-link i {
     width: 20px;
     text-align: center;
@@ -1135,6 +1179,19 @@ header {
     border-radius: 15px;
     box-shadow: var(--shadow-sm);
     overflow: hidden;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-main);
 }
 
 table {
@@ -1429,6 +1486,14 @@ footer {
         z-index: 99;
     }
 
+    /* Dashboard Sidebar Override */
+    .dashboard-wrapper .sidebar {
+        top: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 1100;
+    }
+
     .sidebar.active {
         left: 0;
     }
@@ -1561,37 +1626,30 @@ footer {
         margin-bottom: 25px;
     }
 
-    .sidebar-toggle {
-        display: block !important;
-        margin-left: 10px;
+    .mobile-logo {
+        display: flex;
     }
 
-    .menu-toggle {
-        margin-left: 15px;
+    .sidebar-toggle {
+        display: block !important;
+        margin-left: 0;
+        order: -1;
     }
 
     .main-content {
-        padding: 20px 35px;
+        padding: 20px 25px;
     }
 
     .dash-welcome {
-        font-size: 0.95rem;
-        /* Smaller font on mobile */
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 150px;
-        /* Prevent it from pushing everything */
+        display: none;
     }
 
     .dash-header-right {
         gap: 12px;
-        /* Reduced gap */
     }
 
     .user-profile span {
         display: none;
-        /* Hide name on very small screens or make it smaller */
     }
 
     .stats-grid {

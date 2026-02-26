@@ -34,16 +34,19 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="dash-header">
+                <i class="fas fa-bars sidebar-toggle"></i>
+                <a href="index.html" class="mobile-logo">
+                    <i class="fas fa-heartbeat"></i> TeleHealth
+                </a>
                 <div class="dash-welcome">Good morning, <span>Dr. Smith!</span></div>
                 <div class="dash-header-right">
                     <div class="theme-toggle"><i class="fas fa-moon"></i></div>
-                    <div class="user-profile" style="display: flex; align-items: center; gap: 12px; cursor: pointer;">
-                        <span style="font-weight: 500;">Dr. John Smith</span>
+                    <div class="user-profile">
+                        <span>Dr. John Smith</span>
                         <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=100"
-                            alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;">
+                            alt="Profile">
                     </div>
                 </div>
-                <i class="fas fa-bars sidebar-toggle"></i>
             </div>
 
             <!-- Overview Cards -->
@@ -77,9 +80,8 @@
             <div class="content-table reveal fade-bottom">
                 <div class="table-header">
                     <h3>Today's Appointments</h3>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="text" placeholder="Search patient..." class="form-input"
-                            style="padding: 8px 15px; width: 200px;">
+                    <div class="table-actions">
+                        <input type="text" placeholder="Search patient..." class="form-input" style="width: 200px;">
                     </div>
                 </div>
                 <div style="overflow-x: auto;">
