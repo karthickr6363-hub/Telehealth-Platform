@@ -1,3 +1,9 @@
+// Temporarily disable smooth scroll to fix refresh scroll-locking
+document.documentElement.style.scrollBehavior = 'auto';
+setTimeout(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+}, 100);
+
 // Sticky Header
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
